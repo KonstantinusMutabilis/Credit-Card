@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Credit Card Input</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="CreditCard">
+        <h2>Credit Card data</h2>
+        <br>
+        <form id="my-form">
+            <div class="Full-Name my-form">
+                <label for="fullname">Full Name</label>
+                <input type="text" class="input Full-Name" id="fullname" name="fullname">
+            </div>
+
+            <div class="Card-Number my-form">
+                <label for="cardN">Card Number</label>
+                <input type="text" class="input Card-Number" id="cardN" name="cardN">
+            </div>
+
+            <div class="Date my-form">
+                <label for="date">Expiration Date</label>
+                <input type="month" class="input Date" id="date" name="date" min="2023-07" max="2026-08">
+            </div>
+
+            <div class="CVC my-form">
+                <label for="cvc">CVC</label>
+                <input type="number" class="input " id="cvc" name="cvc">
+            </div>
+
+            <div class="Cupoun my-form">
+                <label for="cupoun">Discount Code</label>
+                <input type="text" class="input" id="cupoun" name="cupoun">
+            </div>
+
+            <button type="submit" id="submit-btn" class="btn my-form Submit">submit</button>
+
+            <br>
+            <p id="msg"></p>
+        </form>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
