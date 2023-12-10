@@ -7,7 +7,8 @@ body {
     height: 100vh;
     background-image: url(./images/bg.jpg);
     background-size: 100%;
-
+    font-family: system-ui, -apple-system, system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 600;
 }
 
 .CreditCard {
@@ -167,4 +168,50 @@ body {
 
 #msg {
     grid-area: Msg;
+}
+
+
+
+@media only screen and (max-width: 1200px) {
+
+    body {
+
+        background-size: 200%;
+
+    }
+}
+
+
+@media only screen and (max-width: 800px) {
+
+
+    body {
+
+        background-size: 300%;
+
+    }
+
+
+    #my-form {
+
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+            "Full-Name Full-Name"
+            "Card-Number Card-Number"
+            "Date ."
+            "CVC ."
+            "Cupoun Cupoun"
+            "Submit ."
+            "Msg Msg";
+
+    }
+
+    .CreditCard {
+        width: 60vw;
+        height: 70vh;
+        padding: 30px;
+
+    }
+
 }
